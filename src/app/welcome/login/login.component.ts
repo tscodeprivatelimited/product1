@@ -12,4 +12,10 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  logInclick(){
+    console.log("Login clicked");
+    //TODO : call API with login details 
+    //username and pwd
+  }
 }
+
