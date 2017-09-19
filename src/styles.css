@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 div#welcomeimg{
     position: relative;
+    
 }
 div#signinbtn{
     position: absolute;
@@ -17,8 +18,8 @@ div#login {
     border-radius: 25px;
     background-color: lightblue
 }
-/* div#popupsignin{
+ div#loginformdiv{
     position: absolute;
-     top :20px;
+     top :-600px;
     left: 50px;
-} */
+} 

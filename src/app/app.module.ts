@@ -28,7 +28,6 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    
     // PopupModule.forRoot(),
     RouterModule.forRoot(appRoutes) //for routing
   ],

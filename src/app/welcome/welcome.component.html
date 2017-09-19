@@ -1,51 +1,15 @@
   <div id=welcomeimg>
-    <img src="http://scc.etllao.com/photoslice/finan.png" alt="img cannot be displayed" width="1365px" height="660px">
-
-          
-<div *ngIf="signinflag">
-          <div class="modal-dialog model-md" >
-            
-               <div class="modal-body">
-                   <app-login></app-login>
-               </div>
-            
+    <img src="http://scc.etllao.com/photoslice/finan.png" alt="img cannot be displayed" width="1365px" height="660px">  
+    <div *ngIf="signinflag">
+       <div class="modal-dialog model-md" >
+          <div class="modal-body">
+            <app-login></app-login>
           </div>
         </div>
-
-        
-   
-    <div id=signinbtn> 
+       </div>
+      <div id=signinbtn> 
         <button class="btn btn-primary btn-lg" (click)="opensignin()">Sign In</button>
      </div>
 </div>
 
 
-<!--net 1 not used<button type="button" (click)="openModel()">Open Modal</button>
-<div #myModel class="modal fade">
-
-  <div class="modal-dialog">
-    <div class="modal-content">
-     <div class="modal-header">
-        <h5 class="modal-title ">Title</h5>
-        <button type="button" class="close" (click)="closeModel()">
-            <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-    </div>
-  </div>
-</div>-->
-
-<!--net 2 used in me<button type="button" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-<div id="myModal" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-    </div>
-  </div>
-</div>-->

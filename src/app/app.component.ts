@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Popup} from 'ng2-opd-popup';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
