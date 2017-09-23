@@ -20,21 +20,19 @@
                 <div id="loginformbelowheader" class="col-xs-12">
                     <div class="jumbotron">
                          <h2>Login</h2><br>
-                            <form  name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate >
-                                <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+                            <form #logInForm="ngForm" name="form" (ngSubmit)="login()">
+                                <div class="form-group">
                                     <label for="username">Username</label>
-                                    <input type="text" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required autofocus/>
-                                    <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+                                    <input type="text"  class="form-control" name="username"  ngModel #username="ngModel" required autofocus/>
                                 </div><br>
-                                <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+                                <div class="form-group">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
-                                    <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+                                    <input type="password" class="form-control" name="password" ngModel #password="ngModel" required />
                                 </div><br><br>
                                 <div class="form-group" >
-                                    <button class="btn btn-primary">Login</button>
+                                    <button class="btn btn-primary" >Login</button>
                                 </div>
-                            </form>  
+                            </form>     
                     </div>
                 </div>
             </div>

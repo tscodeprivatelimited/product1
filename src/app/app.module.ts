@@ -8,29 +8,23 @@ import {  Routes, RouterModule } from '@angular/router'; //for routing
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { LoginComponent } from './welcome/login/login.component';
+import { routes } from './app.router';
 import { HomeComponent } from './home/home.component';
-//added for routing 
-const appRoutes: Routes = [
-  { path: 'welcome', component: WelcomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent }
-]
+ 
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    LoginComponent,
+
     HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    // PopupModule.forRoot(),
-    RouterModule.forRoot(appRoutes) //for routing
-  ],
+    routes
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
