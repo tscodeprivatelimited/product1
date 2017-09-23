@@ -3,11 +3,11 @@ div#welcomeimg{
     position: relative;
     
 }
-div#signinbtn{
+/* div#signinbtn{
     position: absolute;
     top :20px;
     left: 950px;
-}
+} */
 div#login {
     display : block;
     float : right;
@@ -19,7 +19,13 @@ div#login {
     background-color: lightblue
 }
  div#loginformdiv{
-    position: absolute;
-     top :-600px;
-    left: 50px;
+     position: absolute; 
+     top :50px;
+    left: 750px;
 } 
+div#loginheader{
+  background-color: royalblue;
+}
+div#loginformbelowheader{
+    top: 30px;
+}
