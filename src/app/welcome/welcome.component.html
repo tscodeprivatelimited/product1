@@ -28,11 +28,14 @@
                                 <div class="form-group">
                                     <label for="password">Password</label>
                                     <input type="password" class="form-control" name="password" ngModel #password="ngModel" required />
-                                </div><br><br>
-                                <div class="form-group" >
-                                    <button class="btn btn-primary" >Login</button>
-                                </div>
-                            </form>     
+                                </div><br>
+                                <span  class="form-group" >
+                                    <button id="loginbtn" class="btn btn-primary" >Login</button>
+                                    <button id="registerbtn" class="btn btn-primary" (click)="openRegisterForm()">Register New User</button>
+                                    <br><br><br>
+                                </span>
+                            </form>   
+                              
                     </div>
                 </div>
             </div>

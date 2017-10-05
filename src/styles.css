@@ -22,10 +22,7 @@ div#login {
      position: absolute; 
      top :50px;
     left: 750px;
-} 
-div#loginheader{
-  background-color: royalblue;
 }
 div#loginformbelowheader{
     top: 30px;
-}
+}  

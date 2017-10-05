@@ -1,0 +1,22 @@
+button#registerformbtn{
+    position: absolute; 
+    left: 20px;
+}
+a#cancelregbtn{
+    position: absolute; 
+    right: 400px;
+}
+div#registerheader{
+   background-color: #337ab7;
+   text-align: center; 
+   border-radius: 5px;
+}
+h2#textregister{
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+div#regform{
+    position: relative;
+    background-color: #eee;
+    width: 1345px;
+}

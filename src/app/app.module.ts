@@ -5,11 +5,14 @@ import { HttpModule } from '@angular/http';
 import {  Routes, RouterModule } from '@angular/router'; //for routing
 // import { Modal, BSModalContext } from 'angular2-modal/plugins/bootstrap';
 // import {PopupModule} from 'ng2-opd-popup';
-
+import { RESTService } from "./services/rest.service";
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routes } from './app.router';
 import { HomeComponent } from './home/home.component';
+import { RegisterformComponent } from './registerform/registerform.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
  
 
 @NgModule({
@@ -17,7 +20,13 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     WelcomeComponent,
 
-    HomeComponent
+    HomeComponent,
+
+    RegisterformComponent,
+
+    HeaderComponent,
+
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +34,7 @@ import { HomeComponent } from './home/home.component';
     HttpModule,
     routes
     ],
-  providers: [],
+  providers: [RESTService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

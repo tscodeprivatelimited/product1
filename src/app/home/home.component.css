@@ -1,0 +1,67 @@
+ol#firstrow{
+    margin-left: 600px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+ol#secondrow{
+    margin-left: 600px;
+     margin-bottom: 25px;
+}
+ol#thirdrow{
+    margin-left: 740px;
+}
+div#home{
+    /* background-color: #eee; */
+    height: 660px;
+    width: 1365px;
+}
+span#billing{
+    margin-bottom: 25px;
+    position: relative;
+} 
+span#custinfo{
+     margin-left: 25px;
+}
+ span#stockinfo{  
+     margin-bottom: 25px;
+} 
+span#reports{
+     margin-left: 25px;
+}
+ .name{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-family: Helvetica, Arial, sans-serif;
+     line-height: 1px; 
+} 
+ span#billingtext{
+    left: 745px;
+    margin-top: 55px; 
+} 
+span#custinfotext{
+    left: 940px;
+    margin-top: 55px;
+}
+span#stocktext{
+     left: 685px;
+    margin-top: 55px;
+}
+span#reportstext{
+     left: 1010px;
+    margin-top: 55px;
+}
+span#admintext{
+     left: 850px;
+    margin-top: 55px;
+}
+div#homeimg{
+    left :50px;
+    top: 95px;
+    position: absolute;
+}
+div#whiteimg{
+    position: absolute;
+    left: 300px;
+    top: 450px;
+}

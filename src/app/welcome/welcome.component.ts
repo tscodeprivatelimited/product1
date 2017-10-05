@@ -1,6 +1,4 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
-// import { Modal, BSModalContext } from 'angular2-modal/plugins/bootstrap';
-import { LoginComponent } from './login/login.component'
 import  {  NgForm }  from  '@angular/forms'; 
 import { Router } from '@angular/router';
 @Component({
@@ -28,6 +26,9 @@ export class WelcomeComponent implements OnInit {
     console.log("open sign in");
    }
 login(){
+//Get userNAme and pwd from license file. 
+//By API .
+//this.rest.doGet("https:localhost:8080/getLicenseDetails")
   if(this.form.value.username == '1' || this.form.value.username== '2'){
     if(this.form.value.password=='1'){
      console.log("Welcome !!!");
@@ -36,15 +37,17 @@ login(){
     }else{
       this.errorMsg="Password is Wrong !!";
       //open error model with this text
-      console.log("Password is Wrong !!");
+      alert("Wrong details !! Please try again...");
     }
   }else{
     
       this.errorMsg="UserName is Wrong !!";
       //open error model with this text
-      console.log("UserName is Wrong !!");
+      alert("Wrong details !!Please try again...");
   }
 }
 
-
-  }
+openRegisterForm(){
+  this.router.navigate(["/registerform"]);
+}
+}
