@@ -12,3 +12,7 @@ button#registerbtn{
     position: absolute;
     right: 100px;
 }
+
+.font{
+    color: red;
+}

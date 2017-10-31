@@ -1,0 +1,16 @@
+h2#footertext{
+    font-size: 17px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+div#footerrow{
+    width: 1350px;
+}
+div#footer{
+    text-align: center;
+     /* background-color: #337ab7;   */
+    margin-left: 15px;
+    /* margin-top: 52px; */
+    margin-top : 140px;
+    background-color: #eee; 
+    width: 1366px;  
+}

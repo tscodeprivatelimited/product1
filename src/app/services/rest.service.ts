@@ -7,15 +7,7 @@ export class RESTService {
 
   constructor(private http:Http) { }
 
-  doGet(url:string,params:Array<object>){
-     let headers =  new Headers();
-    //headers.append("Content-Type", "text/xml");
-    headers.append("Access-Control-Allow-Origin", "*");
-    headers.append("Access-Control-Allow-Credentials", "true"); 
-    headers.append("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS, POST, PUT, DELETE");
-    headers.append("Content-Type", "application/json,application/x-www-form-urlencoded");
-    headers.append("Access-Control-Request-Headers", "Content-type,X-Requested-With,Origin,accept");
-    
+  doGet(url:string){
     return this.http.get(url).
               map(
                 (response) => {
@@ -27,7 +19,6 @@ export class RESTService {
 
   doPost(url:string,params:object){
     let headers = new Headers({ 'Content-Type': 'application/json' });
-    headers.append('Access-Control-Allow-Origin','*');
     let options = new RequestOptions({ headers: headers });
     return this.http.post(url,params,options).
               map(

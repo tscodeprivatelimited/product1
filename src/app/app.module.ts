@@ -13,7 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { RegisterformComponent } from './registerform/registerform.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
- 
+ import { Angular2FontawesomeModule  } from 'angular2-fontawesome/angular2-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routes
+    routes,
+    Angular2FontawesomeModule
     ],
   providers: [RESTService],
   bootstrap: [AppComponent]

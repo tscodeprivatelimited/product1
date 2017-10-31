@@ -1,0 +1,21 @@
+h2#headertext{
+    font-size: 17px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+div#headerrow{
+    /* width: 1350px; */
+}
+div#header{
+    text-align: center;
+     /* background-color: #337ab7;   */
+    /* margin-left: 1px;
+    top: 2px;
+    background-color: #eee; 
+    width: 1330px;   */
+     background-color: #eee; 
+     top : 5px;
+     width :1379px;
+}
+button#signoutbtn{
+    margin-left: 950px; 
+}

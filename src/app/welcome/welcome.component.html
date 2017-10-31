@@ -20,7 +20,10 @@
                 <div id="loginformbelowheader" class="col-xs-12">
                     <div class="jumbotron">
                          <h2>Login</h2><br>
-                            <form #logInForm="ngForm" name="form" (ngSubmit)="login()">
+                     <div *ngIf="showErrorCredential" class="font"> 
+                        <p>Invalid Creadentials !</p>
+                        </div>  
+                         <form #logInForm="ngForm" name="form" (ngSubmit)="login()">
                                 <div class="form-group">
                                     <label for="username">Username</label>
                                     <input type="text"  class="form-control" name="username"  ngModel #username="ngModel" required autofocus/>
@@ -30,8 +33,9 @@
                                     <input type="password" class="form-control" name="password" ngModel #password="ngModel" required />
                                 </div><br>
                                 <span  class="form-group" >
-                                    <button id="loginbtn" class="btn btn-primary" >Login</button>
-                                    <button id="registerbtn" class="btn btn-primary" (click)="openRegisterForm()">Register New User</button>
+                                    <button id="loginbtn" class="btn btn-lg fa fa-user" aria-hidden="true" >     Login</button>
+                                    <button id="registerbtn" class="btn btn-lg  fa fa-user-plus"  (click)="openRegisterForm()">    Register New User</button>
+                                    
                                     <br><br><br>
                                 </span>
                             </form>   
