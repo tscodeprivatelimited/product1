@@ -1,7 +1,8 @@
-h2#headertext{
+/* h2#headertext{
     font-size: 17px;
     font-family: Helvetica, Arial, sans-serif;
-}
+    position: absolute;
+} */
 div#headerrow{
     /* width: 1350px; */
 }
@@ -15,7 +16,23 @@ div#header{
      background-color: #eee; 
      top : 5px;
      width :1379px;
+      position: absolute;
 }
 button#signoutbtn{
-    margin-left: 950px; 
+    margin-left: 1260px; 
+    position: relative;
+}
+label#usrnm{
+    margin-top: 10px;
+     position: absolute; 
+    margin-left: 5px;
+     font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+label#usrname{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 10px;
+     font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
 }
