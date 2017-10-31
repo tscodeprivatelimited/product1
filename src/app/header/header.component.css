@@ -29,10 +29,24 @@ label#usrnm{
      font-size: 15px;
     font-family: Helvetica, Arial, sans-serif;
 }
+label#date{
+     margin-top: 10px;
+     position: absolute; 
+    margin-left: 1100px;
+     font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
 label#usrname{
     position: absolute;
     margin-left: 90px;
     margin-top: 10px;
+     font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+span#displaydate{
+      margin-top: 10px;
+     position: absolute; 
+    margin-left: 1180px;
      font-size: 15px;
     font-family: Helvetica, Arial, sans-serif;
 }

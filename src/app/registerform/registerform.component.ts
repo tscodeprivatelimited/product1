@@ -45,7 +45,7 @@ export class RegisterformComponent implements OnInit {
     );
 
     }else{
-      alert("Wrong Admin Password, Kindly re enter Admin Password !");
+      alert("Wrong Admin Password, Kindly reenter Admin Password !");
     }
 
   }

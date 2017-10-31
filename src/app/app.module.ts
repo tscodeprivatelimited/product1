@@ -14,7 +14,7 @@ import { RegisterformComponent } from './registerform/registerform.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
  import { Angular2FontawesomeModule  } from 'angular2-fontawesome/angular2-fontawesome';
-
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [

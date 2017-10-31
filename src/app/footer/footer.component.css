@@ -14,3 +14,12 @@ div#footer{
     background-color: #eee; 
     width: 1366px;  
 }
+span#marqueestring{
+    /* margin-bottom: 20px; */
+    margin-bottom: 200px;
+}
+h4#marqueetext{
+      font-size: 17px;
+    /* font-family: Helvetica, Arial, sans-serif;  */
+     color: black; 
+}
