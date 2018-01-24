@@ -15,7 +15,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
  import { Angular2FontawesomeModule  } from 'angular2-fontawesome/angular2-fontawesome';
 import { DatePipe } from '@angular/common';
-
+import { AdminComponent } from './admin/admin.component';
+import { userDetials } from "./services/userDetails";
+import { BillingpageComponent } from './home/billingpage/billingpage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,11 @@ import { DatePipe } from '@angular/common';
 
     HeaderComponent,
 
-    FooterComponent
+    FooterComponent,
+
+    AdminComponent,
+
+    BillingpageComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,7 @@ import { DatePipe } from '@angular/common';
     routes,
     Angular2FontawesomeModule
     ],
-  providers: [RESTService],
+  providers: [RESTService,userDetials],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

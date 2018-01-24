@@ -2,6 +2,8 @@ import { Component, OnInit,ViewChild } from '@angular/core';
 import  {  NgForm }  from  '@angular/forms'; 
 import { Router } from '@angular/router';
 import { RESTService  } from "../services/rest.service";
+
+import { userDetials } from "../services/userDetails";
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
@@ -10,11 +12,11 @@ import { RESTService  } from "../services/rest.service";
 
 
 export class WelcomeComponent implements OnInit {
-    @ViewChild('logInForm')  form:  NgForm; 
+ @ViewChild('logInForm')  form:  NgForm; 
    signinflag : boolean = false;
   public errorMsg:String='';
-  public showErrorCredential:boolean=false;
-   constructor(public router : Router,private rest :RESTService ) {
+  public showErrorCredential:boolean=false;   
+   constructor(public router : Router,private  userDetials:userDetials,private rest :RESTService ) {
    
    }
 public details={
@@ -30,7 +32,9 @@ public details={
     this.rest.doGet("http://localhost:8090/getLicenseDetails").subscribe(
         (response) => {
          this.details=response;
-          console.log("In side call");
+          this.userDetials.setUserName(this.details.userName);
+          this.userDetials.setPassword(this.details.password);
+        console.log("In side call");
       },  
 
       (error)  =>  { }

@@ -5,6 +5,7 @@
 } */
 div#headerrow{
     /* width: 1350px; */
+    width: 100%;
 }
 div#header{
     text-align: center;
@@ -32,13 +33,13 @@ label#usrnm{
 label#date{
      margin-top: 10px;
      position: absolute; 
-    margin-left: 1100px;
+    margin-left: 997px;
      font-size: 15px;
     font-family: Helvetica, Arial, sans-serif;
 }
 label#usrname{
     position: absolute;
-    margin-left: 90px;
+    margin-left: 46px;
     margin-top: 10px;
      font-size: 15px;
     font-family: Helvetica, Arial, sans-serif;

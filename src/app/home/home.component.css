@@ -1,19 +1,21 @@
 ol#firstrow{
     margin-left: 600px;
-    margin-top: 100px;
+    margin-top: 180px;
     margin-bottom: 25px;
 }
 ol#secondrow{
     margin-left: 600px;
      margin-bottom: 25px;
 }
-ol#thirdrow{
+/* ol#thirdrow{
     margin-left: 740px;
-}
+} */
 div#home{
     /* background-color: #eee; */
-    height: 550px;
-    width: 1365px;
+    /* height: 550px;
+    width: 1365px; */
+      height: 100%;
+    width: 100%;
 }
 span#billing{
     margin-bottom: 25px;
@@ -51,17 +53,20 @@ span#reportstext{
      left: 1010px;
     margin-top: 55px;
 }
-span#admintext{
+/* span#admintext{
      left: 850px;
     margin-top: 55px;
-}
+} */
 div#homeimg{
     left :50px;
-    top: 95px;
+    top: 120px;
     position: absolute;
 }
 div#whiteimg{
     position: absolute;
     left: 300px;
-    top: 450px;
+    top: 475px;
+}
+.colour{
+    background-color: yellowgreen;
 }
