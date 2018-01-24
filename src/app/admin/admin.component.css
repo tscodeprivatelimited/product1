@@ -1,0 +1,54 @@
+button#adminregisterformbtn{
+    position: absolute; 
+    left: 20px;
+}
+a#admincancelregbtn{
+    position: absolute; 
+    right: 400px;
+}
+div#adminregisterheader{
+   background-color: #337ab7;
+   text-align: center; 
+   border-radius: 5px;
+}
+h2#admintextregister{
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+div#adminregform{
+    position: relative;
+    background-color: #eee;
+    width: 1360px;
+    height: 760px;
+}
+/* div#adminlogin {
+    display : block;
+    float : right;
+    margin-right: 20px;
+    margin-top: 100px;
+    height: 350px;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    background-color: lightblue
+} */
+ /* div#adminloginformdiv{
+     position: absolute; 
+     top :50px;
+    left: 750px;
+} */
+div#adminloginformbelowheader{
+    top: 30px;
+    left: 350px;
+} 
+.font{
+    color: red;
+}
+/* div#adminformborder{
+    display: block;
+    border: 0.5px solid  black;
+        border-radius: 25px;
+} */
+a#canceladminbtn{
+    position: absolute;
+    left: 200px;
+}

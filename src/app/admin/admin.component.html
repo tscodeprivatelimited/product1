@@ -1,0 +1,33 @@
+<div id="adminregform" class="container"><br>
+<div class="col-md-6 col-md-offset-3">
+     <div  class="row custom-modal-header">
+        <div id="adminregisterheader" class="col-sm-12">
+            <h2 id="admintextregister" >Admin login</h2>
+        </div>
+     </div><br>
+    </div> 
+     <div  class="row" [ngClass]="{'myclass' : shouldUseMyClass}">
+      <div id="adminloginformbelowheader" class="col-xs-6">
+       <div class="jumbotron">
+            <div *ngIf="showErrorCredential" class="font"> 
+            <p>Invalid Creadentials !</p>
+            </div> 
+    <form  id="insideloginform" #adminLogInForm="ngForm" name="form" (ngSubmit)="adminlogin()">
+      <div class="form-group">
+          <label for="adminusername">Username</label>
+          <input type="text"  class="form-control" name="adminusername" ngModel #adminusername="ngModel" required autofocus/>
+      </div><br>
+      <div class="form-group">
+        <label for="adminpassword">Password</label>
+        <input type="password" class="form-control" name="adminpassword" ngModel #adminpassword="ngModel" required />
+      </div><br>
+      <span  class="form-group" >
+        <button id="adminloginbtn" class="btn btn-primary fa fa-user" aria-hidden="true" >     Login</button>
+        <!-- <button id="adminregisterbtn" class="btn btn-lg  fa fa-user-plus"  (click)="openRegisterForm()">    Register New User</button> -->
+        <a id="canceladminbtn" href="#!/login" class="btn btn-primary fa fa-ban">   Cancel</a>
+        <br><br><br>
+      </span>
+    </form>   
+</div>
+    </div>
+      </div>

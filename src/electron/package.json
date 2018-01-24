@@ -1,0 +1,32 @@
+{
+  "build": {
+    "appId": "com.example.app",
+    "asar": false,
+    "win": [
+      {
+        "msi": true
+      }
+    ]
+  },
+  "name": "K-DCP-ECU-Editor",
+  "version": "0.1.0",
+  "main": "electron.js",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "build-electron": "ng build --base-href . && copy src\\electron\\*.* dist && copy node_modules dis",
+    "electron": "npm run build-electron && electron dist/",
+    "pack": "npm run build-electron && electron-packager dist/  --icon=dist/ecu.ico"
+  },
+  "private": true,
+  "dependencies": {
+    "ajax-request": "=1.2.3",
+    "electron-log": "^2.2.9",
+    "properties-reader": "0.0.15",
+    "jquery": "^3.2.1"
+  }
+}
